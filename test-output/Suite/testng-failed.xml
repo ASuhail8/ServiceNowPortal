@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.snow.tests.validloginlogouttest">
+        <methods>
+          <include name="testvalidloginlogout"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.snow.tests.validloginlogouttest -->
+      <class name="com.snow.tests.validlogintest">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="testvalidlogin"/>
+        </methods>
+      </class> <!-- com.snow.tests.validlogintest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
