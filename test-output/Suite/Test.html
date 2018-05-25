@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 18 15:03:01 IST 2018</td>
+<td>Started on:</td><td>Wed May 23 16:50:29 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>138 seconds (138110 ms)</td>
+<tr><td>Total time:</td><td>214 seconds (214941 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,174 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.snow.tests.PasswordResetTest.TestPassRes()'><b>TestPassRes</b><br>Test class: com.snow.tests.PasswordResetTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;s2id_sp_formfield_IO:2a2be6520a0a020e00d111208c9c6391&quot;]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IN-SUHAILMA-1&apos;, ip: &apos;192.168.84.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Suhailma\AppData\Local\Temp\rust_mozprofile.emz64AzJ2CwD, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=10.0, moz:processID=9128.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 15c0e471-a0f8-49c2-a60b-60238a745218
+*** Element info: {Using=xpath, value=//*[@id=&quot;s2id_sp_formfield_IO:2a2be6520a0a020e00d111208c9c6391&quot;]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.snow.pages.PasswordResetPage.clickOnAppPassNeedRes(PasswordResetPage.java:51)
+	at com.snow.tests.PasswordResetTest.TestPassRes(PasswordResetTest.java:48)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037764568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037764568'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;s2id_sp_formfield_IO:2a2be6520a0a020e00d111208c9c6391&quot;]/a
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IN-SUHAILMA-1&apos;, ip: &apos;192.168.84.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Suhailma\AppData\Local\Temp\rust_mozprofile.emz64AzJ2CwD, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=10.0, moz:processID=9128.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 15c0e471-a0f8-49c2-a60b-60238a745218
+*** Element info: {Using=xpath, value=//*[@id=&quot;s2id_sp_formfield_IO:2a2be6520a0a020e00d111208c9c6391&quot;]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.snow.pages.PasswordResetPage.clickOnAppPassNeedRes(PasswordResetPage.java:51)
+	at com.snow.tests.PasswordResetTest.TestPassRes(PasswordResetTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</pre></div></td>
+<td>18</td>
+<td>com.snow.tests.PasswordResetTest@553f17c</td></tr>
+<tr>
+<td title='com.snow.tests.newOrderTest.TestnewORder()'><b>TestnewORder</b><br>Test class: com.snow.tests.newOrderTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//a[.=&apos;View Cart&apos;])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IN-SUHAILMA-1&apos;, ip: &apos;192.168.84.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Suhailma\AppData\Local\Temp\rust_mozprofile.g3V3oQ8d2O7T, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=10.0, moz:processID=14528.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 383a3f05-9cef-4884-9d1a-5691f99d72f5
+*** Element info: {Using=xpath, value=(//a[.=&apos;View Cart&apos;])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.snow.pages.iPhonePage.clickOnViewCart(iPhonePage.java:38)
+	at com.snow.tests.newOrderTest.TestnewORder(newOrderTest.java:55)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2017797638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2017797638'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//a[.=&apos;View Cart&apos;])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;IN-SUHAILMA-1&apos;, ip: &apos;192.168.84.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Suhailma\AppData\Local\Temp\rust_mozprofile.g3V3oQ8d2O7T, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=10.0, moz:processID=14528.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=true}]
+Session ID: 383a3f05-9cef-4884-9d1a-5691f99d72f5
+*** Element info: {Using=xpath, value=(//a[.=&apos;View Cart&apos;])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.snow.pages.iPhonePage.clickOnViewCart(iPhonePage.java:38)
+	at com.snow.tests.newOrderTest.TestnewORder(newOrderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.TestNG.privateMain(TestNG.java:1354)
+	at org.testng.TestNG.main(TestNG.java:1323)
+</pre></div></td>
+<td>24</td>
+<td>com.snow.tests.newOrderTest@5f341870</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,38 +244,26 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.snow.tests.createINCtest.TestCreateINC()'><b>TestCreateINC</b><br>Test class: com.snow.tests.createINCtest<br/>
-<a href="#Output-775445710" onClick='toggleBox("Output-775445710", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-643290333" onClick='toggleBox("Output-643290333", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-775445710" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775445710">
-INC0010012<br/>
+<a href="#Output-643290333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-643290333">
+INC0010018<br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
-<td>com.snow.tests.createINCtest@51565ec2</td></tr>
-<tr>
-<td title='com.snow.tests.PasswordResetTest.TestPassRes()'><b>TestPassRes</b><br>Test class: com.snow.tests.PasswordResetTest<br/>
-<a href="#Output-754177595" onClick='toggleBox("Output-754177595", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-754177595" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-754177595">
-INC0010013 Created<br/>
-</div>
-</td>
-<td></td>
-<td>25</td>
-<td>com.snow.tests.PasswordResetTest@482f8f11</td></tr>
+<td>26</td>
+<td>com.snow.tests.createINCtest@14bf9759</td></tr>
 <tr>
 <td title='com.snow.tests.validlogintest.testvalidlogin()'><b>testvalidlogin</b><br>Test class: com.snow.tests.validlogintest</td>
 <td></td>
 <td>0</td>
-<td>com.snow.tests.validlogintest@1b604f19</td></tr>
+<td>com.snow.tests.validlogintest@271053e1</td></tr>
 <tr>
 <td title='com.snow.tests.validloginlogouttest.testvalidloginlogout()'><b>testvalidloginlogout</b><br>Test class: com.snow.tests.validloginlogouttest</td>
 <td></td>
-<td>7</td>
-<td>com.snow.tests.validloginlogouttest@1593948d</td></tr>
+<td>8</td>
+<td>com.snow.tests.validloginlogouttest@4f7d0008</td></tr>
 </table><p>
 </body>
 </html>

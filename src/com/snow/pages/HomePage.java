@@ -31,15 +31,15 @@ public class HomePage extends BasePage
 	
 	//utilization
 	
-	public void enterUsername()
+	public void enterUsername(String un)
 	{
-		unTB.sendKeys("admin");
+		unTB.sendKeys(un);
 		
 	}
 	
-	public void enterPassword()
+	public void enterPassword(String pwd)
 	{
-		pwTB.sendKeys("dr1oR6EvQuTY");
+		pwTB.sendKeys(pwd);
 	}
 	
 	public void clickOnLogin()

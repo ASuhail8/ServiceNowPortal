@@ -18,7 +18,7 @@ public void preCondition()
 	
 	System.setProperty(gkey, gvalue);
 	driver = new FirefoxDriver();
-	//driver.manage().window().maximize();
+	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.get("https://dev56922.service-now.com/sp?sysparm_stack=no");
 }

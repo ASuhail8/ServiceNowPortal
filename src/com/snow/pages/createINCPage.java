@@ -41,9 +41,9 @@ public class createINCPage extends BasePage
 		High.click();
 	}
 	
-	public void enterDescription()
+	public void enterDescription(String des)
 	{
-		textArea.sendKeys("This is a test INC");
+		textArea.sendKeys(des);
 	}
 	
 	public void clickOnSubmit()

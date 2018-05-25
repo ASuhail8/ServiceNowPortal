@@ -3,6 +3,7 @@ package com.snow.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.snow.genericUtils.ExcelData;
 import com.snow.generics.BaseTest;
 import com.snow.pages.BbcPage;
 import com.snow.pages.HomePage;
@@ -16,7 +17,7 @@ public class createINCtest extends BaseTest
 {
 
 	@Test
-	public void TestCreateINC()
+	public void TestCreateINC() throws Exception
 	{
 		
 		HomePage hp = new HomePage(driver);
@@ -27,10 +28,15 @@ public class createINCtest extends BaseTest
 		LogoutPage lp = new LogoutPage(driver);
 		createINCPage CI = new createINCPage(driver);
 		
-		//login
+		//verifyTitle
 		
-		hp.enterUsername();
-		hp.enterPassword();
+		
+		
+		//login
+		String un = ExcelData.getData(input_path, "LoginPage", 1, 0);
+		hp.enterUsername(un);
+		String pwd = ExcelData.getData(input_path, "LoginPage", 1, 1);
+		hp.enterPassword(pwd);
 		hp.clickOnLogin();
 		
 		// Click on Order Something
@@ -49,7 +55,9 @@ public class createINCtest extends BaseTest
 		
 		CI.clickonUrgencytab();
 		CI.clickonHigh();
-		CI.enterDescription();
+		
+		String des = ExcelData.getData(input_path, "createINCPage", 1, 0);
+		CI.enterDescription(des);
 		CI.clickOnSubmit();
 		CI.DisplayMsg();
 		

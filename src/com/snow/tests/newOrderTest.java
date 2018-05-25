@@ -3,6 +3,7 @@ package com.snow.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.snow.genericUtils.ExcelData;
 import com.snow.generics.BaseTest;
 import com.snow.pages.BbcPage;
 import com.snow.pages.HomePage;
@@ -18,7 +19,7 @@ public class newOrderTest extends BaseTest
 {
 	
 	@Test
-	public void TestnewORder() throws InterruptedException
+	public void TestnewORder() throws Exception
 	{
 		HomePage hp = new HomePage(driver);
 		OSPage OS = new OSPage(driver);
@@ -29,10 +30,12 @@ public class newOrderTest extends BaseTest
 		createINCPage CI = new createINCPage(driver);
 		iPhonePage i = new iPhonePage(driver);
 		cartPage c = new cartPage(driver);
-		//login
 		
-		hp.enterUsername();
-		hp.enterPassword();
+		//login
+		String un = ExcelData.getData(input_path, "LoginPage", 1, 0);
+		hp.enterUsername(un);
+		String pwd = ExcelData.getData(input_path, "LoginPage", 1, 1);
+		hp.enterPassword(pwd);
 		hp.clickOnLogin();
 		
 		// Click on Order Something
