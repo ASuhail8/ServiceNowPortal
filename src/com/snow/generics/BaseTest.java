@@ -7,10 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public abstract class BaseTest implements Autoconst
 {
 public static WebDriver driver;
+
 
 @BeforeMethod
 public void preCondition()

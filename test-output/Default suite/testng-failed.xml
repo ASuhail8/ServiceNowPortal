@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.snow.tests.validlogintest">
+      <class name="com.snow.tests.validloginlogouttest">
         <methods>
+          <include name="testvalidloginlogout"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
-          <include name="testvalidlogin"/>
         </methods>
-      </class> <!-- com.snow.tests.validlogintest -->
+      </class> <!-- com.snow.tests.validloginlogouttest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
